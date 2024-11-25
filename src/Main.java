@@ -21,7 +21,7 @@ public class Main {
 
         //Задача 5
         for (int y = 1904; y <= 2096; y = y + 4) {
-            System.out.println(y + " год является високосным");
+            System.out.println(y + " год является  високосным");
         }
 
         //Задача 6
