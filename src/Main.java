@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         //Задача 1
-        int Copital = 0;
+        int copital = 0;
         int bank = 15000;
         int month = 1;
-        while (Copital <= 2459000) {
-            System.out.println("Месяц " + month + ", сумма накоплений равна " + Copital + " рублей");
+        while (copital <= 2459000) {
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + copital + " рублей");
             month++;
-            Copital = Copital + bank;
+            copital = copital + bank;
         }
 
         //Задача 2
