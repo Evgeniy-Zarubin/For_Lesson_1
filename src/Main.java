@@ -1,61 +1,88 @@
 public class Main {
     public static void main(String[] args) {
         //Задача 1
-        for (int i = 1; i <= 10; i++) {
-            System.out.println("Значение:" + i);
+        int Copital = 0;
+        int bank = 15000;
+        int month = 1;
+        while (Copital <= 2459000) {
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + Copital + " рублей");
+            month++;
+            Copital = Copital + bank;
         }
 
         //Задача 2
-        for (int s = 10; s >= 1; s--) {
-            System.out.println("Убывание:" + s);
+
+        int i = 1;
+        while (i <= 10) {
+            System.out.print(i + " ");
+            i++;
         }
+        System.out.println();
+        for (int l = 10; l >= 1; l--) {
+            System.out.print(l + " ");
+        }
+        System.out.println();
+
         //Задача 3
-        for (int l = 0; l <= 17; l = l + 2) {
-            System.out.println("Четные:" + l);
+        int y = 12000000;
+        int year = 1;
+        int born;
+        int death;
+        while (year <= 10) {
+            System.out.println("Год " + year + ", численность насиления составляет " + y);
+            year++;
+            born = y / 1000 * 17;
+            death = y / 1000 * 8;
+            y = y + born - death;
         }
 
         //Задача 4
-        for (int w = 10; w >= -10; w--) {
-            System.out.println("(10 и -10):" + w);
+        double fond = 15000;
+        int month2 = 1;
+        while (fond <= 12000000) {
+            System.out.println("Месяц " + month2 + ", сумма накоплений равна " + fond);
+            fond = fond + (fond * 7 / 100);
+            month2++;
         }
 
         //Задача 5
-        for (int y = 1904; y <= 2096; y = y + 4) {
-            System.out.println(y + " год является  високосным");
+        double fond2 = 15000;
+        int month3 = 1;
+        while (fond2 <= 12000000) {
+            if (month3 % 6 == 0) {
+                System.out.println("Месяц " + month3 + ", сумма накоплений равна " + fond2);
+            }
+            fond2 = fond2 + (fond2 * 7 / 100);
+            month3++;
         }
-
         //Задача 6
-        for (int n = 7; n <= 98; n = n + 7) {
-            System.out.println("Счёт +7:" + n);
+        double fond3 = 15000;
+        int month4 = 1;
+        int nineYears = 108;
+        while (month4 <= nineYears){
+            if (month4 % 6 == 0) {
+                System.out.println("Месяц " + month4 + ", сумма накоплений равна " + fond3);
+            }
+            fond3 = fond3 + (fond3 * 7 / 100);
+            month4++;
         }
 
         //Задача 7
-        for (int n2 = 1; n2 <= 512; n2 = n2 * 2) {
-            System.out.println("Умножение на 2:" + n2);
-        }
+        int friday = 3;
+        do {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчёт.");
+            friday = friday + 7;
+        } while (friday <=31);
 
         //Задача 8
-        int deposit = 29000;
-        int sumDeposit = 0;
-        for (int i = 1; i <= 12; i++) {
-            sumDeposit = sumDeposit + deposit;
-            System.out.println("Месяц " + i + " Сумма накоплений равна " + sumDeposit);
+        int yearPast = 1824;
+        do {
+            if (yearPast % 79 ==0){
+                System.out.println(yearPast);
+            }
+            yearPast++;
         }
-
-        //Задача 9
-        int investment = 29000;
-        int sumInvestment = 0;
-        for (int i = 1; i <= 12; i++) {
-            sumInvestment = sumInvestment + investment / 100;
-            sumInvestment = sumInvestment + investment;
-            System.out.println("Месяц " + i + " Сумма накоплений равна " + sumInvestment);
-        }
-
-        //Задача 10
-        int number = 2;
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(number + "*" + i + " = " + number * i);
-        }
+        while (yearPast <=2124);
 
     }
 }
