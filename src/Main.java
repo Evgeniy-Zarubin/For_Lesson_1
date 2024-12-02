@@ -75,14 +75,16 @@ public class Main {
         } while (friday <=31);
 
         //Задача 8
-        int yearPast = 1824;
-        do {
-            if (yearPast % 79 ==0){
-                System.out.println(yearPast);
+        int currentYear = 2023;
+        int startYear = currentYear - 200;
+        int endYear = currentYear + 100;
+        int cometPeriod = 79;
+
+        for (int year2 = startYear; year2 <= endYear; year2++) {
+            if (year2 % cometPeriod == 0) {
+                System.out.println(year2);
             }
-            yearPast++;
         }
-        while (yearPast <=2124);
 
     }
 }
